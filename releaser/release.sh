@@ -23,8 +23,8 @@ else
   echo "!!! Release is not tagged !!!"
 fi
 
-DOCKER_IMAGE=${DOCKER_IMAGE:-rootgg/plik}
-DOCKER_TAG=${TAG:-dev}
+# DOCKER_IMAGE=${DOCKER_IMAGE:-rootgg/plik}
+# DOCKER_TAG=${TAG:-dev}
 TARGETS=${TARGETS:-linux/amd64,linux/i386,linux/arm64,linux/arm}
 
 if [[ -n "$CLIENT_TARGETS" ]]; then
@@ -49,7 +49,7 @@ mkdir -p releases
 rm -rf releases/*
 
 # Build release archives
-docker buildx build --progress=plain --platform $TARGETS $BUILD_ARGS --target plik-release-archive -o releases .
+# docker buildx build --progress=plain --platform $TARGETS $BUILD_ARGS --target plik-release-archive -o releases .
 
 # Flatten release directory
 find releases -type f -exec mv -i '{}' releases ';'
@@ -59,7 +59,7 @@ find releases/* -type d -delete
 sha256sum releases/* > releases/sha256sum.txt
 
 # Build and push docker images
-docker buildx build --progress=plain --platform $TARGETS $BUILD_ARGS $EXTRA_ARGS .
+# docker buildx build --progress=plain --platform $TARGETS $BUILD_ARGS $EXTRA_ARGS .
 
 echo ""
 echo " Done. Release archives are available in the releases directory"
