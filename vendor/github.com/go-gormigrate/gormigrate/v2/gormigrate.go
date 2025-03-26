@@ -432,8 +432,7 @@ func (g *Gormigrate) canInitializeSchema() (bool, error) {
 }
 
 func (g *Gormigrate) unknownMigrationsHaveHappened() (bool, error) {
-	sql := fmt.Sprintf("SELECT %s FROM %s", g.options.IDColumnName, g.options.TableName)
-	rows, err := g.tx.Raw(sql).Rows()
+	rows, err := g.tx.Table(g.options.TableName).Select(g.options.IDColumnName).Rows()
 	if err != nil {
 		return false, err
 	}
@@ -459,7 +458,8 @@ func (g *Gormigrate) unknownMigrationsHaveHappened() (bool, error) {
 }
 
 func (g *Gormigrate) insertMigration(id string) error {
-	record := map[string]interface{}{g.options.IDColumnName: id}
+	record := g.model()
+	reflect.ValueOf(record).Elem().FieldByName("ID").SetString(id)
 	return g.tx.Table(g.options.TableName).Create(record).Error
 }
 
