@@ -71,7 +71,7 @@ github.com/beorn7/perks/quantile
 github.com/boombuler/barcode
 github.com/boombuler/barcode/qr
 github.com/boombuler/barcode/utils
-# github.com/camathieu/pb v1.0.29-0.20190403132434-889de99fc8d5
+# github.com/camathieu/pb v2.0.6+incompatible
 ## explicit
 github.com/camathieu/pb
 # github.com/cespare/xxhash/v2 v2.3.0
@@ -142,8 +142,6 @@ github.com/envoyproxy/go-control-plane/envoy/type/v3
 # github.com/envoyproxy/protoc-gen-validate v1.2.1
 ## explicit; go 1.21.1
 github.com/envoyproxy/protoc-gen-validate/validate
-# github.com/fatih/color v1.18.0
-## explicit; go 1.17
 # github.com/felixge/httpsnoop v1.0.4
 ## explicit; go 1.13
 github.com/felixge/httpsnoop
@@ -280,9 +278,10 @@ github.com/klauspost/compress/zstd/internal/xxhash
 github.com/klauspost/cpuid/v2
 # github.com/mattn/go-colorable v0.1.13
 ## explicit; go 1.15
-# github.com/mattn/go-runewidth v0.0.16
-## explicit; go 1.9
-github.com/mattn/go-runewidth
+github.com/mattn/go-colorable
+# github.com/mattn/go-isatty v0.0.20
+## explicit; go 1.15
+github.com/mattn/go-isatty
 # github.com/mattn/go-sqlite3 v1.14.24
 ## explicit; go 1.19
 github.com/mattn/go-sqlite3
@@ -359,9 +358,6 @@ github.com/prometheus/common/model
 github.com/prometheus/procfs
 github.com/prometheus/procfs/internal/fs
 github.com/prometheus/procfs/internal/util
-# github.com/rivo/uniseg v0.4.7
-## explicit; go 1.18
-github.com/rivo/uniseg
 # github.com/root-gg/logger v0.0.0-20150501173826-5d9a47a35312
 ## explicit
 github.com/root-gg/logger
@@ -734,8 +730,24 @@ google.golang.org/protobuf/types/known/fieldmaskpb
 google.golang.org/protobuf/types/known/structpb
 google.golang.org/protobuf/types/known/timestamppb
 google.golang.org/protobuf/types/known/wrapperspb
-# gopkg.in/cheggaaa/pb.v1 v1.0.28
+# gopkg.in/VividCortex/ewma.v1 v1.1.1
 ## explicit
+gopkg.in/VividCortex/ewma.v1
+# gopkg.in/cheggaaa/pb.v2 v2.0.7
+## explicit
+gopkg.in/cheggaaa/pb.v2/termutil
+# gopkg.in/fatih/color.v1 v1.7.0
+## explicit
+gopkg.in/fatih/color.v1
+# gopkg.in/mattn/go-colorable.v0 v0.1.0
+## explicit
+gopkg.in/mattn/go-colorable.v0
+# gopkg.in/mattn/go-isatty.v0 v0.0.4
+## explicit
+gopkg.in/mattn/go-isatty.v0
+# gopkg.in/mattn/go-runewidth.v0 v0.0.4
+## explicit
+gopkg.in/mattn/go-runewidth.v0
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3
