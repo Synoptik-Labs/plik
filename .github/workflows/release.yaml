@@ -7,8 +7,7 @@ on:
       - v*
 
 jobs:
-  build:
-    name: build_to_release
+  build_to_release:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code into the Go module directory
