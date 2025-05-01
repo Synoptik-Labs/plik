@@ -12,7 +12,7 @@ require (
 	github.com/dgrijalva/jwt-go v3.2.1-0.20180921172315-3af4c746e1c2+incompatible
 	github.com/docopt/docopt-go v0.0.0-20180111231733-ee0de3bc6815
 	github.com/dustin/go-humanize v1.0.1
-	github.com/go-gormigrate/gormigrate/v2 v2.1.3
+	github.com/go-gormigrate/gormigrate/v2 v2.1.4
 	github.com/golang/snappy v1.0.0
 	github.com/gorilla/mux v1.8.1
 	github.com/iancoleman/strcase v0.3.0
