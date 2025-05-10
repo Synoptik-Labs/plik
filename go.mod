@@ -25,7 +25,7 @@ require (
 	github.com/olekukonko/ts v0.0.0-20171002115256-78ecb04241c0
 	github.com/pilagod/gorm-cursor-paginator/v2 v2.6.1
 	github.com/prometheus/client_golang v1.21.1
-	github.com/prometheus/client_model v0.6.1
+	github.com/prometheus/client_model v0.6.2
 	github.com/root-gg/logger v0.0.0-20150501173826-5d9a47a35312
 	github.com/root-gg/utils v0.0.0-20201113182430-4cef83d8cdcf
 	github.com/spf13/cobra v1.9.1
