@@ -275,7 +275,7 @@ github.com/klauspost/compress/internal/snapref
 github.com/klauspost/compress/s2
 github.com/klauspost/compress/zstd
 github.com/klauspost/compress/zstd/internal/xxhash
-# github.com/klauspost/cpuid/v2 v2.2.10
+# github.com/klauspost/cpuid/v2 v2.2.11
 ## explicit; go 1.22
 github.com/klauspost/cpuid/v2
 # github.com/mattn/go-colorable v0.1.13
@@ -286,24 +286,28 @@ github.com/mattn/go-runewidth
 # github.com/mattn/go-sqlite3 v1.14.24
 ## explicit; go 1.19
 github.com/mattn/go-sqlite3
-# github.com/minio/crc64nvme v1.0.1
+# github.com/minio/crc64nvme v1.0.2
 ## explicit; go 1.22
 github.com/minio/crc64nvme
 # github.com/minio/md5-simd v1.1.2
 ## explicit; go 1.14
 github.com/minio/md5-simd
-# github.com/minio/minio-go/v7 v7.0.88
-## explicit; go 1.22
+# github.com/minio/minio-go/v7 v7.0.95
+## explicit; go 1.23.0
 github.com/minio/minio-go/v7
+github.com/minio/minio-go/v7/internal/json
 github.com/minio/minio-go/v7/pkg/cors
 github.com/minio/minio-go/v7/pkg/credentials
 github.com/minio/minio-go/v7/pkg/encrypt
+github.com/minio/minio-go/v7/pkg/kvcache
 github.com/minio/minio-go/v7/pkg/lifecycle
 github.com/minio/minio-go/v7/pkg/notification
+github.com/minio/minio-go/v7/pkg/peeker
 github.com/minio/minio-go/v7/pkg/replication
 github.com/minio/minio-go/v7/pkg/s3utils
 github.com/minio/minio-go/v7/pkg/set
 github.com/minio/minio-go/v7/pkg/signer
+github.com/minio/minio-go/v7/pkg/singleflight
 github.com/minio/minio-go/v7/pkg/sse
 github.com/minio/minio-go/v7/pkg/tags
 # github.com/mitchellh/go-homedir v1.1.0
@@ -321,6 +325,9 @@ github.com/nu7hatch/gouuid
 # github.com/olekukonko/ts v0.0.0-20171002115256-78ecb04241c0
 ## explicit
 github.com/olekukonko/ts
+# github.com/philhofer/fwd v1.2.0
+## explicit; go 1.20
+github.com/philhofer/fwd
 # github.com/pilagod/gorm-cursor-paginator/v2 v2.6.1
 ## explicit; go 1.14
 github.com/pilagod/gorm-cursor-paginator/v2/cursor
@@ -382,6 +389,9 @@ github.com/spf13/pflag
 github.com/stretchr/testify/assert
 github.com/stretchr/testify/assert/yaml
 github.com/stretchr/testify/require
+# github.com/tinylib/msgp v1.3.0
+## explicit; go 1.20
+github.com/tinylib/msgp/msgp
 # github.com/xhit/go-str2duration/v2 v2.1.0
 ## explicit; go 1.13
 github.com/xhit/go-str2duration/v2
@@ -442,7 +452,7 @@ go.opentelemetry.io/otel/trace
 go.opentelemetry.io/otel/trace/embedded
 go.opentelemetry.io/otel/trace/internal/telemetry
 go.opentelemetry.io/otel/trace/noop
-# golang.org/x/crypto v0.36.0
+# golang.org/x/crypto v0.39.0
 ## explicit; go 1.23.0
 golang.org/x/crypto/argon2
 golang.org/x/crypto/bcrypt
@@ -463,7 +473,7 @@ golang.org/x/crypto/openpgp/errors
 golang.org/x/crypto/openpgp/packet
 golang.org/x/crypto/openpgp/s2k
 golang.org/x/crypto/pbkdf2
-# golang.org/x/net v0.37.0
+# golang.org/x/net v0.41.0
 ## explicit; go 1.23.0
 golang.org/x/net/http/httpguts
 golang.org/x/net/http2
@@ -485,16 +495,16 @@ golang.org/x/oauth2/google/internal/stsexchange
 golang.org/x/oauth2/internal
 golang.org/x/oauth2/jws
 golang.org/x/oauth2/jwt
-# golang.org/x/sync v0.12.0
+# golang.org/x/sync v0.15.0
 ## explicit; go 1.23.0
 golang.org/x/sync/semaphore
-# golang.org/x/sys v0.31.0
+# golang.org/x/sys v0.33.0
 ## explicit; go 1.23.0
 golang.org/x/sys/cpu
 golang.org/x/sys/unix
 golang.org/x/sys/windows
 golang.org/x/sys/windows/registry
-# golang.org/x/text v0.23.0
+# golang.org/x/text v0.26.0
 ## explicit; go 1.23.0
 golang.org/x/text/cases
 golang.org/x/text/internal
